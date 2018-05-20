@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<paths>
+	<path id="123">E:\DuLieu\TaiLieu\CongVan</path>
+	<path id="124">E:\DuLieu\TaiLieu\DuAn</path>
+</paths>
+
+<codes>
+	<code id="125">
+		<primary>CV</primary>
+		<relations>
+			<relation id="126">C\/</relation>
+		</relations>
+	</code>
+	<code id="126">
+		<primary>DA</primary>
+		<relations>
+		</relations>
+	</code>
+</codes>
+
+<links>
+	<link id="127">
+		<path_id>123</path_id>
+		<code_id>125</code_id>
+	</link>
+	<link id="128">
+		<path_id>124</path_id>
+		<code_id>126</code_id>
+	</link>
+</links>
+
+<pathFolderPDF>E:\ScanningResult</pathFolderPDF>
