@@ -139,6 +139,18 @@ namespace ScanningDoc
             con.Close();
          }
       }
+      public Path getPathFromCodeInLink(int code)
+      {
+         List<Link> links = getLinks();
+         foreach(Link link in links)
+         {
+            if(link.Code.Id == code)
+            {
+               return link.Path;
+            }
+         }
+         return null;
+      }
 
       public List<Code> getCodes()
       {
@@ -217,6 +229,53 @@ namespace ScanningDoc
 
          //Console.WriteLine("ID: " + reader["code_id"] + "\tName: " + reader["name"]);
       }
+      public Code getCode(string name)
+      {
+         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         try
+         {
+            con.Open();
+            string sql = string.Format("select * from codes where name = '{0}'", name);
+            SQLiteCommand cmd = new SQLiteCommand(sql, con);
+            SQLiteDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+               return new Code((int)reader["id"], (string)reader["name"]);
+            }
+            return null;
+         }
+         catch
+         {
+            return null;
+         }
+         finally
+         {
+            con.Close();
+         }
+
+         //Console.WriteLine("ID: " + reader["code_id"] + "\tName: " + reader["name"]);
+      }
+
+      public Code getPrimiveCodeFromRelatingCode(string name)
+      {
+         List<Code> codes = getCodes();
+         foreach(Code code in codes)
+         {
+            List<RelatingCode> relatingCodes = getRelatingCodes(code.Id);
+            foreach(RelatingCode relatingCode in relatingCodes)
+            {
+               if (relatingCode.Name.Equals(name))
+               {
+                  return code;
+               }
+            }
+         }
+         return null;
+         
+
+         //Console.WriteLine("ID: " + reader["code_id"] + "\tName: " + reader["name"]);
+      }
+
       public bool addCode(int id, string name)
       {
          if (name.Equals(""))
@@ -261,6 +320,7 @@ namespace ScanningDoc
             con.Close();
          }
       }
+     
       public List<RelatingCode> getRelatingCodes(int id)
       {
          List<RelatingCode> list = new List<RelatingCode>();

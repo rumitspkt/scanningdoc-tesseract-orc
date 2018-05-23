@@ -32,9 +32,10 @@
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
          this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
          this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-         this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+         this.btnExit = new DevExpress.XtraBars.BarButtonItem();
          this.btnSetting = new DevExpress.XtraBars.BarButtonItem();
          this.btnAdvancedSetting = new DevExpress.XtraBars.BarButtonItem();
+         this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
          this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
          this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
          this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -49,11 +50,12 @@
          this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.barButtonItem1,
-            this.barButtonItem2,
+            this.btnExit,
             this.btnSetting,
-            this.btnAdvancedSetting});
+            this.btnAdvancedSetting,
+            this.barButtonItem2});
          this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-         this.ribbonControl1.MaxItemId = 5;
+         this.ribbonControl1.MaxItemId = 6;
          this.ribbonControl1.Name = "ribbonControl1";
          this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -68,14 +70,14 @@
          this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
          this.barButtonItem1.Name = "barButtonItem1";
          // 
-         // barButtonItem2
+         // btnExit
          // 
-         this.barButtonItem2.Caption = "Thoát";
-         this.barButtonItem2.Id = 2;
-         this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-         this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-         this.barButtonItem2.Name = "barButtonItem2";
-         this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+         this.btnExit.Caption = "Thoát";
+         this.btnExit.Id = 2;
+         this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
+         this.btnExit.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.LargeImage")));
+         this.btnExit.Name = "btnExit";
+         this.btnExit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
          // 
          // btnSetting
          // 
@@ -95,6 +97,15 @@
          this.btnAdvancedSetting.Name = "btnAdvancedSetting";
          this.btnAdvancedSetting.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAdvancedSetting_ItemClick);
          // 
+         // barButtonItem2
+         // 
+         this.barButtonItem2.Caption = "Testing";
+         this.barButtonItem2.Id = 5;
+         this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+         this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+         this.barButtonItem2.Name = "barButtonItem2";
+         this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick_1);
+         // 
          // ribbonPage1
          // 
          this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -113,6 +124,7 @@
          // ribbonPageGroup2
          // 
          this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
+         this.ribbonPageGroup2.ItemLinks.Add(this.btnExit);
          this.ribbonPageGroup2.Name = "ribbonPageGroup2";
          this.ribbonPageGroup2.Text = "Lựa chọn";
          // 
@@ -146,10 +158,11 @@
       private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
       private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
       private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-      private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+      private DevExpress.XtraBars.BarButtonItem btnExit;
       private DevExpress.XtraBars.BarButtonItem btnSetting;
       private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
       private DevExpress.XtraBars.BarButtonItem btnAdvancedSetting;
+      private DevExpress.XtraBars.BarButtonItem barButtonItem2;
    }
 }
 

@@ -84,6 +84,10 @@ namespace ScanningDoc
 
       private void btnThemDuongDan_Click(object sender, EventArgs e)
       {
+         if(tdDuongDan.Text == "")
+         {
+            return;
+         }
          if (DataProvider.Instance.checkPathExist(@tdDuongDan.Text))
          {
             XtraMessageBox.Show("Đường dẫn đã tồn tại");
@@ -141,6 +145,7 @@ namespace ScanningDoc
          {
             tdDuongDan.Text = "";
             XtraMessageBox.Show("Đã thêm");
+            frmMain.processing.refreshData();
             loadData();
             cbbDuongDan.Text = "";
             cbbMaVB.Text = "";
@@ -164,7 +169,7 @@ namespace ScanningDoc
          else
          {
             XtraMessageBox.Show("Đã xóa");
-
+            frmMain.processing.refreshData();
             if (frmMain.advancedSetting != null)
                frmMain.advancedSetting.refreshForm();
             loadData();

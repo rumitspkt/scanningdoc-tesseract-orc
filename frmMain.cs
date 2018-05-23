@@ -17,6 +17,7 @@ namespace ScanningDoc
       public frmMain()
       {
          InitializeComponent();
+         RemoveFormCloseButton();
       }
 
       private void btnSetting_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -34,6 +35,12 @@ namespace ScanningDoc
             f.Show();
          }
       }
+
+      internal void setBtnEnable(bool check)
+      {
+         btnExit.Enabled = check;
+      }
+
       private Form checkExisted(Type fType)
       {
          foreach (Form f in this.MdiChildren)
@@ -74,6 +81,22 @@ namespace ScanningDoc
       private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
       {
          this.Close();
+      }
+      private void RemoveFormCloseButton()
+      {
+         DevExpress.Skins.Skin currentSkin;
+         DevExpress.Skins.SkinElement elementFormButtonClose;
+
+         currentSkin = DevExpress.Skins.FormSkins.GetSkin(DevExpress.LookAndFeel.UserLookAndFeel.Default);
+         elementFormButtonClose = currentSkin[DevExpress.Skins.FormSkins.SkinFormButtonClose];
+         elementFormButtonClose.Image.Image = null;
+         elementFormButtonClose.Glyph.Image = null;
+      }
+
+      private void barButtonItem2_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+      {
+         frmTesting f = new frmTesting();
+         f.Show();
       }
    }
 }

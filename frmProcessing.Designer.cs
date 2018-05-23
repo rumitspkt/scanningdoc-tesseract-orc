@@ -30,6 +30,7 @@
         {
          System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProcessing));
          this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+         this.edtKQ = new DevExpress.XtraEditors.TextEdit();
          this.btnProccess = new DevExpress.XtraEditors.SimpleButton();
          this.btnFindFolder = new DevExpress.XtraEditors.SimpleButton();
          this.edtFolder = new DevExpress.XtraEditors.TextEdit();
@@ -40,6 +41,7 @@
          this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
          this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
          this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+         this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
          this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
          this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
          this.lbFile = new DevExpress.XtraEditors.LabelControl();
@@ -47,7 +49,9 @@
          this.lbProcessedFile = new DevExpress.XtraEditors.LabelControl();
          this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
          this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+         this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
          this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+         this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
          this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
          this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
          this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -55,12 +59,9 @@
          this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
          this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
          this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-         this.edtKQ = new DevExpress.XtraEditors.TextEdit();
-         this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
-         this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-         this.progressBarControl1 = new DevExpress.XtraEditors.ProgressBarControl();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
          this.layoutControl1.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.edtKQ.Properties)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.edtFolder.Properties)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
@@ -68,19 +69,18 @@
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
          this.layoutControl2.SuspendLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.edtKQ.Properties)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).BeginInit();
          this.SuspendLayout();
          // 
          // layoutControl1
@@ -97,6 +97,14 @@
          this.layoutControl1.Size = new System.Drawing.Size(777, 138);
          this.layoutControl1.TabIndex = 0;
          this.layoutControl1.Text = "layoutControl1";
+         // 
+         // edtKQ
+         // 
+         this.edtKQ.Location = new System.Drawing.Point(111, 105);
+         this.edtKQ.Name = "edtKQ";
+         this.edtKQ.Size = new System.Drawing.Size(637, 20);
+         this.edtKQ.StyleController = this.layoutControl1;
+         this.edtKQ.TabIndex = 8;
          // 
          // btnProccess
          // 
@@ -201,6 +209,15 @@
          this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
          this.layoutControlItem6.TextVisible = false;
          // 
+         // layoutControlItem12
+         // 
+         this.layoutControlItem12.Control = this.edtKQ;
+         this.layoutControlItem12.Location = new System.Drawing.Point(0, 93);
+         this.layoutControlItem12.Name = "layoutControlItem12";
+         this.layoutControlItem12.Size = new System.Drawing.Size(740, 24);
+         this.layoutControlItem12.Text = "Các mã đã quét";
+         this.layoutControlItem12.TextSize = new System.Drawing.Size(96, 13);
+         // 
          // layoutControl2
          // 
          this.layoutControl2.Controls.Add(this.labelControl7);
@@ -220,7 +237,7 @@
          // 
          // labelControl7
          // 
-         this.labelControl7.Location = new System.Drawing.Point(170, 57);
+         this.labelControl7.Location = new System.Drawing.Point(164, 57);
          this.labelControl7.Name = "labelControl7";
          this.labelControl7.Size = new System.Drawing.Size(34, 13);
          this.labelControl7.StyleController = this.layoutControl2;
@@ -231,10 +248,10 @@
          // 
          this.lbFile.Location = new System.Drawing.Point(154, 57);
          this.lbFile.Name = "lbFile";
-         this.lbFile.Size = new System.Drawing.Size(12, 13);
+         this.lbFile.Size = new System.Drawing.Size(6, 13);
          this.lbFile.StyleController = this.layoutControl2;
          this.lbFile.TabIndex = 9;
-         this.lbFile.Text = "12";
+         this.lbFile.Text = "0";
          // 
          // labelControl5
          // 
@@ -252,7 +269,7 @@
          this.lbProcessedFile.Size = new System.Drawing.Size(6, 13);
          this.lbProcessedFile.StyleController = this.layoutControl2;
          this.lbProcessedFile.TabIndex = 7;
-         this.lbProcessedFile.Text = "5";
+         this.lbProcessedFile.Text = "0";
          // 
          // labelControl3
          // 
@@ -274,6 +291,16 @@
          this.labelControl2.TabIndex = 5;
          this.labelControl2.Text = "Tiến độ";
          // 
+         // progressBarControl1
+         // 
+         this.progressBarControl1.Location = new System.Drawing.Point(12, 35);
+         this.progressBarControl1.Name = "progressBarControl1";
+         this.progressBarControl1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+         this.progressBarControl1.Properties.TextOrientation = DevExpress.Utils.Drawing.TextOrientation.VerticalUpwards;
+         this.progressBarControl1.Size = new System.Drawing.Size(753, 18);
+         this.progressBarControl1.StyleController = this.layoutControl2;
+         this.progressBarControl1.TabIndex = 4;
+         // 
          // layoutControlGroup2
          // 
          this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -290,6 +317,15 @@
          this.layoutControlGroup2.Name = "layoutControlGroup2";
          this.layoutControlGroup2.Size = new System.Drawing.Size(777, 217);
          this.layoutControlGroup2.TextVisible = false;
+         // 
+         // layoutControlItem4
+         // 
+         this.layoutControlItem4.Control = this.progressBarControl1;
+         this.layoutControlItem4.Location = new System.Drawing.Point(0, 23);
+         this.layoutControlItem4.Name = "layoutControlItem4";
+         this.layoutControlItem4.Size = new System.Drawing.Size(757, 22);
+         this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+         this.layoutControlItem4.TextVisible = false;
          // 
          // layoutControlItem5
          // 
@@ -332,54 +368,18 @@
          this.layoutControlItem10.Control = this.lbFile;
          this.layoutControlItem10.Location = new System.Drawing.Point(142, 45);
          this.layoutControlItem10.Name = "layoutControlItem10";
-         this.layoutControlItem10.Size = new System.Drawing.Size(16, 152);
+         this.layoutControlItem10.Size = new System.Drawing.Size(10, 152);
          this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
          this.layoutControlItem10.TextVisible = false;
          // 
          // layoutControlItem11
          // 
          this.layoutControlItem11.Control = this.labelControl7;
-         this.layoutControlItem11.Location = new System.Drawing.Point(158, 45);
+         this.layoutControlItem11.Location = new System.Drawing.Point(152, 45);
          this.layoutControlItem11.Name = "layoutControlItem11";
-         this.layoutControlItem11.Size = new System.Drawing.Size(599, 152);
+         this.layoutControlItem11.Size = new System.Drawing.Size(605, 152);
          this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
          this.layoutControlItem11.TextVisible = false;
-         // 
-         // edtKQ
-         // 
-         this.edtKQ.Location = new System.Drawing.Point(111, 105);
-         this.edtKQ.Name = "edtKQ";
-         this.edtKQ.Size = new System.Drawing.Size(637, 20);
-         this.edtKQ.StyleController = this.layoutControl1;
-         this.edtKQ.TabIndex = 8;
-         // 
-         // layoutControlItem12
-         // 
-         this.layoutControlItem12.Control = this.edtKQ;
-         this.layoutControlItem12.Location = new System.Drawing.Point(0, 93);
-         this.layoutControlItem12.Name = "layoutControlItem12";
-         this.layoutControlItem12.Size = new System.Drawing.Size(740, 24);
-         this.layoutControlItem12.Text = "Các mã đã quét";
-         this.layoutControlItem12.TextSize = new System.Drawing.Size(96, 13);
-         // 
-         // layoutControlItem4
-         // 
-         this.layoutControlItem4.Control = this.progressBarControl1;
-         this.layoutControlItem4.Location = new System.Drawing.Point(0, 23);
-         this.layoutControlItem4.Name = "layoutControlItem4";
-         this.layoutControlItem4.Size = new System.Drawing.Size(757, 22);
-         this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-         this.layoutControlItem4.TextVisible = false;
-         // 
-         // progressBarControl1
-         // 
-         this.progressBarControl1.Location = new System.Drawing.Point(12, 35);
-         this.progressBarControl1.Name = "progressBarControl1";
-         this.progressBarControl1.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-         this.progressBarControl1.Properties.TextOrientation = DevExpress.Utils.Drawing.TextOrientation.VerticalUpwards;
-         this.progressBarControl1.Size = new System.Drawing.Size(753, 18);
-         this.progressBarControl1.StyleController = this.layoutControl2;
-         this.progressBarControl1.TabIndex = 4;
          // 
          // frmProcessing
          // 
@@ -393,6 +393,7 @@
          this.Load += new System.EventHandler(this.frmProcessing_Load);
          ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
          this.layoutControl1.ResumeLayout(false);
+         ((System.ComponentModel.ISupportInitialize)(this.edtKQ.Properties)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.edtFolder.Properties)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -400,20 +401,18 @@
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
          this.layoutControl2.ResumeLayout(false);
-         this.layoutControl2.PerformLayout();
+         ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.edtKQ.Properties)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.progressBarControl1.Properties)).EndInit();
          this.ResumeLayout(false);
 
         }

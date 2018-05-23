@@ -51,6 +51,7 @@ namespace ScanningDoc
             f.ImageOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
             f.ToImage(fileLocation, 1);
          }
+         f.ClosePdf();
          return fileLocation;
       }
 
