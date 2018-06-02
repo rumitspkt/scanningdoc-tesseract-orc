@@ -24,7 +24,9 @@ namespace ScanningDoc
          if (openFileDialog1.ShowDialog() == DialogResult.OK)
          {
             string type;
-            string fileNameLocation = convertPDFtoJPG(openFileDialog1.FileName);
+            int i = openFileDialog1.FileName.LastIndexOf('\\');
+            string str = openFileDialog1.FileName.Substring(0, i + 1);
+            string fileNameLocation = convertPDFtoJPG(openFileDialog1.FileName, str);
             using (Image img = Image.FromFile(fileNameLocation))
             {
                string result = tesseractORC(cropImage(img));
@@ -43,10 +45,10 @@ namespace ScanningDoc
          var page = ocr.Process(item);
          return page.GetText();
       }
-      private String convertPDFtoJPG(string fileNameInp)
+      private String convertPDFtoJPG(string fileNameInp, string str)
       {
          string fileLocation = "";
-         string fileNameOut = @"E:\tesseractORC\";
+         string fileNameOut = str;
          SautinSoft.PdfFocus f = new SautinSoft.PdfFocus();
          f.OpenPdf(@fileNameInp);
          if (f.PageCount > 0)
@@ -59,6 +61,7 @@ namespace ScanningDoc
             fileLocation = @fileNameOut + fileName + ".jpg";
             f.ToImage(fileLocation, 1);
          }
+         f.ClosePdf();
          return fileLocation;
       }
 

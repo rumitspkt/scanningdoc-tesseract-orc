@@ -190,3 +190,4 @@ C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\b
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\bin\Debug\x86\liblept1742.dll
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\bin\Debug\x86\libtesseract3051.dll
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.frmTesting.resources
+C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\bin\Debug\ScanningDoc.exe.config

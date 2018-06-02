@@ -21,7 +21,7 @@ namespace ScanningDoc
       public List<Path> getPaths()
       {
          List<Path> list = new List<Path>();
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -71,7 +71,7 @@ namespace ScanningDoc
       }
       public Path getPath(int id)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -101,7 +101,7 @@ namespace ScanningDoc
          {
             return false;
          }
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -121,7 +121,7 @@ namespace ScanningDoc
       }
       public bool deletePath(int id)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -155,7 +155,7 @@ namespace ScanningDoc
       public List<Code> getCodes()
       {
          List<Code> list = new List<Code>();
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -205,7 +205,7 @@ namespace ScanningDoc
       }
       public Code getCode(int id)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -231,7 +231,7 @@ namespace ScanningDoc
       }
       public Code getCode(string name)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -282,7 +282,8 @@ namespace ScanningDoc
          {
             return false;
          }
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -302,7 +303,7 @@ namespace ScanningDoc
       }
       public bool deleteCode(int id)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -324,7 +325,7 @@ namespace ScanningDoc
       public List<RelatingCode> getRelatingCodes(int id)
       {
          List<RelatingCode> list = new List<RelatingCode>();
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -362,7 +363,11 @@ namespace ScanningDoc
       }
       public bool addRelatingCode(int code_id, string name)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
+         if (name.Contains("'"))
+         {
+            name = name.Replace("'", "''");
+         }
          try
          {
             con.Open();
@@ -382,7 +387,7 @@ namespace ScanningDoc
       }
       public bool deleteRelatingCode(int code_id, string name)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -403,7 +408,7 @@ namespace ScanningDoc
       public List<Link> getLinks()
       {
          List<Link> list = new List<Link>();
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -431,7 +436,7 @@ namespace ScanningDoc
       }
       public bool addLink(int code_id, int path_id)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -451,7 +456,7 @@ namespace ScanningDoc
       }
       public bool deleteLink(int code_id, int path_id)
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -492,7 +497,7 @@ namespace ScanningDoc
       }
       public bool addPDFFolderPath(string @name)
       {
-        SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+        SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();
@@ -517,7 +522,7 @@ namespace ScanningDoc
       }
       public string getPDFFolderPath()
       {
-         SQLiteConnection con = new SQLiteConnection("Data Source=../../scanningdb.sqlite;Version=3;");
+         SQLiteConnection con = new SQLiteConnection("Data Source=scanningdb.sqlite;Version=3;");
          try
          {
             con.Open();

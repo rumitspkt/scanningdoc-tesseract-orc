@@ -99,3 +99,5 @@ C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\o
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.exe.licenses
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.exe
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.pdb
+C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.csprojResolveAssemblyReference.cache
+C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\bin\Release\ScanningDoc.exe.config

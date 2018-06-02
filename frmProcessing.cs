@@ -84,8 +84,9 @@ namespace ScanningDoc
 
                    foreach (Tuple<string, string> tp in list)
                    {
+                      //MessageBox.Show("1");
                       string code = core.getCode(tp.Item1);
-
+                      //MessageBox.Show("2");
                       string filePathInp = tp.Item1;
                       string fileName = tp.Item2;
                       bool check = moveFile(filePathInp, fileName, code);
@@ -153,6 +154,7 @@ namespace ScanningDoc
                {
                   flag = true;
                   _path = link.Path;
+                  break;
                }
             }
          }
