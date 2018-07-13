@@ -101,3 +101,25 @@ C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\o
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.pdb
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.csprojResolveAssemblyReference.cache
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\bin\Release\ScanningDoc.exe.config
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\ScanningDoc.exe.config
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.exe
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.pdb
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\x64\liblept1742.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\x64\libtesseract3051.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\x86\liblept1742.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\x86\libtesseract3051.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\ScanningDoc.exe
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\ScanningDoc.pdb
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\Tesseract.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\SautinSoft.PdfFocus.xml
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\System.Data.SQLite.xml
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Release\Tesseract.xml
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.csprojResolveAssemblyReference.cache
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.frmAdvancedSetting.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.frmMain.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.frmProcessing.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.frmSetting.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.frmTesting.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.Properties.Resources.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.csproj.GenerateResource.Cache
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Release\ScanningDoc.exe.licenses

@@ -17,8 +17,8 @@ namespace ScanningDoc
             this.Name = name;
         }
 
-        public int Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
+        public int Id { get {return this.id;} set {this.id = value;}}
+        public string Name { get { return this.name; } set { this.name = value; } }
         public override string ToString()
         {
             return Name;

@@ -191,3 +191,25 @@ C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\b
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\bin\Debug\x86\libtesseract3051.dll
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.frmTesting.resources
 C:\Users\RumIT\Documents\Visual Studio 2017\Projects\scanningdoc-tesseract-orc\bin\Debug\ScanningDoc.exe.config
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\ScanningDoc.exe.config
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.csprojResolveAssemblyReference.cache
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.frmAdvancedSetting.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.frmMain.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.frmProcessing.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.frmSetting.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.frmTesting.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.Properties.Resources.resources
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.csproj.GenerateResource.Cache
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.exe.licenses
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\x64\liblept1742.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\x64\libtesseract3051.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\x86\liblept1742.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\x86\libtesseract3051.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\ScanningDoc.exe
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\ScanningDoc.pdb
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\Tesseract.dll
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\SautinSoft.PdfFocus.xml
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\System.Data.SQLite.xml
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\bin\Debug\Tesseract.xml
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.exe
+C:\Users\rumitspkt\Desktop\scanningdoc-tesseract-orc\obj\Debug\ScanningDoc.pdb

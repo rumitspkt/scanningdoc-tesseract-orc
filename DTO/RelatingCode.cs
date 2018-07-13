@@ -15,7 +15,7 @@ namespace ScanningDoc.DTO
          this.name = name;
       }
 
-      public string Name { get => name; set => name = value; }
+      public string Name { get { return this.name; } set { this.name = value; } }
       public override string ToString()
       {
          return name;

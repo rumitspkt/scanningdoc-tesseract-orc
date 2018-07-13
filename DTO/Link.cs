@@ -17,7 +17,7 @@ namespace ScanningDoc
             this.Path = path;
         }
 
-        public Code Code { get => code; set => code = value; }
-        public Path Path { get => path; set => path = value; }
+        public Code Code { get {return this.code;} set {this.code = value;}}
+        public Path Path { get { return this.path; } set { this.path = value; } }
     }
 }
